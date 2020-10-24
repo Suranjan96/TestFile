@@ -15,7 +15,13 @@ def choose_cave():
          cave = input()
     return cave
   
-    
+def play_again():
+    answer=''
+    while answer!='y' and answer !='n':
+        print('Do you want to play again? (y or n)')
+        answer=input()
+    return answer  
+        
 def check_cave(cave_number):
     friendlyCave=random.randint(1,2)
     print('You approach the cave...')
